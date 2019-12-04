@@ -1,4 +1,4 @@
-package com.example.michelefreitas.workshopmongo;
+package com.example.michelefreitas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
