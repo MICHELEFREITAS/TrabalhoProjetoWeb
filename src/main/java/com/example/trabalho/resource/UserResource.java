@@ -1,4 +1,4 @@
-package com.example.michelefreitas.resource;
+package com.example.trabalho.resource;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.michelefreitas.entities.User;
-import com.example.michelefreitas.services.UserService;
+import com.example.trabalho.entities.User;
+import com.example.trabalho.services.UserService;
 
 @RestController
 @RequestMapping (value = "/users")

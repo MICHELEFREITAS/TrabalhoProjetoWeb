@@ -1,4 +1,4 @@
-package com.example.michelefreitas.config;
+package com.example.trabalho.config;
 
 import java.util.Arrays;
 
@@ -7,8 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import com.example.michelefreitas.entities.User;
-import com.example.michelefreitas.repositories.UserRepository;
+import com.example.trabalho.entities.User;
+import com.example.trabalho.repositories.UserRepository;
 
 @Configuration
 @Profile("test")

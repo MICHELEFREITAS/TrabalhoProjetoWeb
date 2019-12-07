@@ -1,4 +1,4 @@
-package com.example.michelefreitas.services;
+package com.example.trabalho.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.michelefreitas.entities.User;
-import com.example.michelefreitas.repositories.UserRepository;
+import com.example.trabalho.entities.User;
+import com.example.trabalho.repositories.UserRepository;
 
 @Service
 public class UserService {
