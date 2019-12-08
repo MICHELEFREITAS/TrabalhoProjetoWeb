@@ -29,7 +29,7 @@ public class User implements Serializable{
 	
 	//Lista de pedidos
 	//o Muitos para 1 lá do outro lado está mapeado pelo atributo client 
-	
+	//@JsonIgnore
 	@OneToMany(mappedBy = "client")
 	private List<Order> orders = new ArrayList<>();
 	
