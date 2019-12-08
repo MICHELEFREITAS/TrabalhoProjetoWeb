@@ -16,7 +16,6 @@ import javax.persistence.Table;
 
 import com.example.trabalho.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
@@ -33,8 +32,7 @@ public class Order implements Serializable{
 	
 	//grava no BD um número inteiro só internamente. Externo mostra o OrderStatus
 	private Integer orderStatus;
-	
-	@JsonIgnore
+		
 	@ManyToOne
 	@JoinColumn(name = "client_id")
 	private User client;
@@ -42,6 +40,9 @@ public class Order implements Serializable{
 	//pedido conehece itens dele
 	@OneToMany(mappedBy = "id.order")
 	private Set<OrderItem> items = new HashSet<>();
+	
+	public Order() {
+	}
 	
 	public Order(Long id, Instant moment, OrderStatus orderStatus, User client) {
 		super();
